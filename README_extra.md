@@ -16,3 +16,15 @@ CREATE_FAILED            AWS::ResourceGroups::G   ApplicationResourceGro   Resou
                                                                            5a83b02dc03c,          
                                                                            HandlerErrorCode:      
                                                                            AccessDenied)  
+
+added permissions for resourcegroups
+still didn't work
+followed this https://stackoverflow.com/questions/57932734/validationerror-stackarn-aws-cloudformation-stack-is-in-rollback-complete-state
+and deleted stack from cloudformation and tried again
+
+ddin't work, doesn't have permissions on application insights
+updated group
+
+deploy worked
+test via
+curl https://<api-id>.execute-api.us-east-1.amazonaws.com/Prod/hello/
